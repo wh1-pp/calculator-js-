@@ -1,1 +1,3 @@
-# calculator-js-
+# calculator-js
+****************
+Обычный калькулятор, который сделан на JavaScript
