@@ -9,7 +9,6 @@ function App() {
   function calculate() {
     const n1 = Number(num1)
     const n2 = Number(num2)
-
     switch (op) {
       case '+': setResult(n1 + n2); break
       case '-': setResult(n1 - n2); break
@@ -20,6 +19,13 @@ function App() {
         break
       default: setResult('Выберите операцию')
     }
+  }
+
+  function clear() {
+    setNum1('')
+    setNum2('')
+    setOp(null)
+    setResult('')
   }
 
   return (
@@ -66,6 +72,13 @@ function App() {
           className="w-full bg-blue-500 text-white py-2 rounded-lg font-bold hover:bg-blue-600 transition"
         >
           Подсчитать
+        </button>
+
+        <button
+          onClick={clear}
+          className="w-full bg-red-400 text-white py-2 rounded-lg font-bold hover:bg-red-500 transition mt-2"
+        >
+          Очистить
         </button>
 
         {result !== '' && (

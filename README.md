@@ -10,3 +10,5 @@
 
 v 1.0
 (React + Vite + plugins(TailWind))
+v 1.1 
+Добавил кнопку "Очистить"
